@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Unpack project
-        run:    run: unzip -q "$(ls *.zip | sort -V | tail -n 1)" -d proj
+        run: unzip -q lg-ac-remote-v2.zip -d proj
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
